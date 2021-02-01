@@ -468,6 +468,7 @@ RubiksCubeControls.prototype.updateStepButton = function() {
 		}
 		this.stepButton.appendChild(document.createTextNode(this.solution.length));
 	}
+	
 }
 
 RubiksCubeControls.prototype.nextMove = function() {
