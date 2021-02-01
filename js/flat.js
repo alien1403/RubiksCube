@@ -469,6 +469,7 @@ RubiksCubeControls.prototype.updateStepButton = function() {
 		this.stepButton.appendChild(document.createTextNode(this.solution.length));
 	}
 }
+
 RubiksCubeControls.prototype.nextMove = function() {
 	var move = this.solution.shift();
 	this.cube.makeMove(move);
@@ -478,6 +479,7 @@ RubiksCubeControls.prototype.nextMove = function() {
 		this.overlay.style.display = 'none';
 	}
 }
+
 RubiksCubeControls.prototype.setWidth = function(width) {
 	this.container.style.width = (width-2) + 'px';
 	this.container.style.height = (width*15/28 - 2) + 'px';
